@@ -1,5 +1,7 @@
 # Cloning [zType](https://ztype.ziadev.com/) with React
 
+Deployed here: https://ziadevcom.github.io/ztype-react/
+
 Random thoughts 👇
 
 ## Components

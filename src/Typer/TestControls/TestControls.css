@@ -1,0 +1,19 @@
+#testControls {
+  gap: 1rem;
+}
+
+#testControls button {
+  padding: 1rem;
+  background-color: var(--bg-color);
+  border: 0;
+  font-size: inherit;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#testControls button:hover {
+  background-color: var(--bright);
+  color: var(--primary-color);
+  font-weight: bold;
+}

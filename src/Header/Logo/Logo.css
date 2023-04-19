@@ -1,0 +1,15 @@
+.header .header__logo a {
+  display: flex;
+  text-decoration: none;
+}
+
+.header .header__logo svg {
+  width: var(--icon-size);
+  fill: var(--accent-color);
+  margin-right: 0.5rem;
+}
+
+.header .header__logo h1 {
+  font-size: 1.75rem;
+  font-weight: normal;
+}

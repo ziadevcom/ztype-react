@@ -1,0 +1,7 @@
+.header nav .header__githubIcon {
+  width: var(--icon-size);
+}
+
+.header nav .header__githubIcon g {
+  fill: var(--bright);
+}

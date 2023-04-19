@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  --icon-size: 2.5rem;
+}
+
+.header nav {
+  display: flex;
+  gap: 1rem;
+}

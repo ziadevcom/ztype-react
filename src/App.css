@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-primary);
+  color: var(--bright);
+}
+
+/* Show outline on label when input is focused via keyboard */
+/* Custom styles for keyboard focus */
+*:focus-visible,
+input:focus-visible + label {
+  outline: var(--focus-outline);
+  border-radius: 1px;
+  outline-offset: 5px;
+}
+
+:root {
+  --primary-color: #052e28;
+  --accent-color: #f6ad02;
+  --bg-color: #ffffff1f;
+  --bright: #fff;
+  --text-color: #fff;
+  --font-primary: "Space Mono", monospace;
+  --text-xl: clamp(30px, 3vw + 1rem, 50px);
+  --text-lg: 2.5rem;
+  --text-normal: 1rem;
+  --text-small: 0.8rem;
+  --border: 2px solid #1947449c;
+  --focus-outline: 2px solid var(--accent-color);
+  --radius: 5px;
+}
+
+body {
+  padding: 2rem 1rem;
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+
+body #root {
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+#root main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

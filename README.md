@@ -1,4 +1,4 @@
-# Cloning [zTyper](https://ztype.ziadev.com/) with React
+# Cloning [zType](https://ztype.ziadev.com/) with React
 
 Random thoughts 👇
 

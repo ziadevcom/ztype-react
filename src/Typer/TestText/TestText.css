@@ -1,0 +1,31 @@
+#demoText {
+  --error: rgb(248, 110, 110);
+  margin: 3rem 0rem 5rem 0rem;
+  position: relative;
+}
+#demoText p:first-of-type {
+  opacity: 0.15;
+}
+#demoText p {
+  --accent-color: var(--bright);
+  font-size: clamp(16px, calc(3vw+1rem), 25px);
+}
+
+#demoTextResult span.incorrect {
+  color: var(--error);
+  background-color: var(--primary-color);
+}
+
+#demoText p#demoTextResult span.space {
+  white-space: pre;
+  background-color: var(--error);
+  opacity: 0.3;
+}
+
+p#demoTextResult {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}

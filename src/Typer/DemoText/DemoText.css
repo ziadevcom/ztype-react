@@ -1,9 +1,0 @@
-#demoText {
-  margin: 3rem 0rem 5rem 0rem;
-}
-
-#demoText p {
-  --accent-color: var(--bright);
-  opacity: 0.15;
-  font-size: clamp(16px, calc(3vw+1rem), 25px);
-}

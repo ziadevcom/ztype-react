@@ -11,13 +11,24 @@ export default function zType () {
     punctuation: false,
     numbers: true
   })
+  const [testOnGoing, setTestOnGoing] = useState(false)
+  const [userText, setUserText] = useState('')
+
+  function onUserTextChange ({ target }) {
+    setUserText(target.value)
+  }
+  function onClickStartTest () {
+    // if (testOnGoing) return
+    setTestOnGoing(true)
+    setConfig({ ...config })
+  }
 
   return (
     <>
       <Header />
       <main>
-        <Filters config={config} setConfig={setConfig} />
-        <Typer config={config} />
+        <Filters config={config} setConfig={setConfig} testOnGoing={testOnGoing} />
+        <Typer config={config} testOnGoing={testOnGoing} onClickStartTest={onClickStartTest} userText={userText} onUserTextChange={onUserTextChange} />
       </main>
       <Footer />
     </>

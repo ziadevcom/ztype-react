@@ -1,0 +1,13 @@
+#results {
+  color: var(--accent-color);
+}
+
+.resultsWPM {
+  font-size: var(--text-lg);
+}
+
+.resultsConfig {
+  display: flex;
+  /* gap: 1rem; */
+  /* color: var(--accent-color); */
+}

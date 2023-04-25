@@ -1,7 +1,7 @@
 import Timer from './Timer/Timer'
 import './Filters.css'
 
-export default function Filters ({ config, setConfig }) {
+export default function Filters ({ config, setConfig, testOnGoing, setTestFinished }) {
   const { time, punctuation, numbers } = config
   function onChange (event) {
     const filtersConfig = { ...config }
@@ -17,7 +17,7 @@ export default function Filters ({ config, setConfig }) {
 
   return (
     <div id='filters'>
-      <Timer config={config} />
+      <Timer config={config} testOnGoing={testOnGoing} setTestFinished={setTestFinished} />
       <div className='filterItems'>
         <TimeFilter time={time} onChange={onChangeTime} />
         <Filter checked={punctuation} name='punctuation' onChange={onChange} />
